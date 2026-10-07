@@ -19,20 +19,10 @@ export const Hero: React.FC<HeroProps> = ({ currentLang }) => {
           referrerPolicy="no-referrer"
         />
 
-        {/* Deep Islamic Green gradient overlays for contrast & elegance */}
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/95 via-emerald-950/85 to-emerald-950/75" />
-        <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/30 to-emerald-950/70" />
-        <div className="absolute inset-0 bg-islamic-pattern opacity-25" />
-
-        {/* Corner label "পরিকল্পিত" */}
-        <div className="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 z-10">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-lg bg-emerald-950/85 border border-amber-400/70 backdrop-blur-md shadow-md text-amber-300">
-            <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-            <span className="text-xs sm:text-sm font-semibold tracking-wider font-bengali">
-              {INSTITUTION_INFO.campusPlanTag}
-            </span>
-          </div>
-        </div>
+        {/* Deep Islamic Green gradient overlays balanced for photo visibility & contrast */}
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/90 via-emerald-950/75 to-emerald-950/65" />
+        <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-transparent to-emerald-950/50" />
+        <div className="absolute inset-0 bg-islamic-pattern opacity-15" />
       </div>
 
       {/* Decorative Golden Arch Accent Lines */}

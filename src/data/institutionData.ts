@@ -1,5 +1,14 @@
 import { AcademicProgram, GalleryItem, NavItem, NoticeItem, TeacherItem, WhyChooseItem } from '../types';
 
+import quranStudyImg from '../assets/images/academic_quran_study_1791341528979.jpg';
+import campusLibraryImg from '../assets/images/campus_library_hall_1791341540456.jpg';
+import heroComplexImg from '../assets/images/hero_campus_complex_1791342965149.jpg';
+import heroExteriorImg from '../assets/images/hero_campus_exterior_1791341510153.jpg';
+import institutionBuildingImg from '../assets/images/institution_building_day_1791341552468.jpg';
+
+export const PRINCIPAL_OFFICE_IMG =
+  'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791375497/%E0%A6%9C%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8_%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95%E0%A7%87%E0%A6%B0_%E0%A6%95%E0%A6%95%E0%A7%8D%E0%A6%B7.png';
+
 export const INSTITUTION_INFO = {
   nameBn: 'কোনাবাড়ী দারুল উলূম কমপ্লেক্স',
   nameEn: 'Konabari Darul Uloom Complex',
@@ -13,10 +22,11 @@ export const INSTITUTION_INFO = {
   addressEn: 'East of Haque Medical, Kashimpur Road, Konabari, Gazipur, Bangladesh.',
   areaBn: 'কোনাবাড়ী, গাজীপুর',
   areaEn: 'Konabari, Gazipur',
-  heroImage: '/src/assets/images/hero_campus_facade_1791342954561.jpg',
-  quranStudyImage: '/src/assets/images/academic_quran_study_1791341528979.jpg',
-  libraryImage: '/src/assets/images/campus_library_hall_1791341540456.jpg',
-  campusBuildingImage: '/src/assets/images/hero_campus_complex_1791342965149.jpg',
+  heroImage: 'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791355568/WhatsApp_Image_2026-03-01_at_11.18.06_AM.jpg',
+  quranStudyImage: quranStudyImg,
+  libraryImage: campusLibraryImg,
+  campusBuildingImage: 'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791355568/WhatsApp_Image_2026-03-01_at_11.18.06_AM.jpg',
+  principalOfficeImage: PRINCIPAL_OFFICE_IMG,
   logoUrl: 'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791341141/Madrasha_Logo_New.jpg',
   campusPlanTitle: 'KONABARI DARUL ULOOM COMPLEX, GAZIPUR',
   campusPlanTag: 'পরিকল্পিত',
@@ -317,16 +327,25 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     titleBn: 'ক্যাম্পাস ভবন ও প্রাঙ্গণ',
     titleEn: 'Campus Building & Courtyard',
     category: 'campus',
-    imageUrl: '/src/assets/images/hero_campus_exterior_1791341510153.jpg',
-    captionBn: 'কোনাবাড়ী দারুল উলূম কমপ্লেক্সের সুপরিসর ও সুশৃঙ্খল ক্যাম্পাস ভবন।',
-    captionEn: 'Spacious and disciplined campus building of Konabari Darul Uloom Complex.',
+    imageUrl: 'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791355568/WhatsApp_Image_2026-03-01_at_11.18.06_AM.jpg',
+    captionBn: 'কোনাবাড়ী দারুল উলূম কমপ্লেক্সের সুপরিসর ক্যাম্পাস ভবন।',
+    captionEn: 'Campus building of Konabari Darul Uloom Complex.',
+  },
+  {
+    id: 'g-principal',
+    titleBn: 'জামিয়ার প্রধান শিক্ষকের কক্ষ',
+    titleEn: "Principal's Office / Head Teacher Room",
+    category: 'campus',
+    imageUrl: PRINCIPAL_OFFICE_IMG,
+    captionBn: 'কোনাবাড়ী দারুল উলূম কমপ্লেক্সের প্রধান শিক্ষকের অফিস কক্ষ।',
+    captionEn: "Office room of the Head Teacher / Principal, Konabari Darul Uloom Complex.",
   },
   {
     id: 'g-2',
     titleBn: 'হিফজ ও তিলাওয়াত কক্ষ',
     titleEn: 'Quran Study & Hifz Hall',
     category: 'academic',
-    imageUrl: '/src/assets/images/academic_quran_study_1791341528979.jpg',
+    imageUrl: quranStudyImg,
     captionBn: 'পবিত্র কুরআন তিলাওয়াত ও হিফজ অনুশীলনের শান্তিময় পরিবেশ।',
     captionEn: 'Serene and focused environment for Holy Quran recitation and memorization.',
   },
@@ -335,7 +354,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     titleBn: 'কিতাবখানা ও পাঠাগার',
     titleEn: 'Library & Kitab Study Center',
     category: 'academic',
-    imageUrl: '/src/assets/images/campus_library_hall_1791341540456.jpg',
+    imageUrl: campusLibraryImg,
     captionBn: 'ইসলামিক গবেষণামূলক কিতাব ও সাহিত্যসমৃদ্ধ পাঠাগার।',
     captionEn: 'Institutional library enriched with classical Islamic references and literature.',
   },
@@ -344,16 +363,16 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     titleBn: 'ক্যাম্পাস স্থাপত্য ও পরিবেশ',
     titleEn: 'Campus Architecture & Landscape',
     category: 'campus',
-    imageUrl: '/src/assets/images/institution_building_day_1791341552468.jpg',
-    captionBn: 'দ্বীনি শিক্ষার উপযোগী নির্মল ও মনোরম ক্যাম্পাস পরিবেশ।',
-    captionEn: 'Pleasant, serene campus environment designed for dedicated Islamic education.',
+    imageUrl: heroComplexImg,
+    captionBn: 'দ্বীনি শিক্ষার উপযোগী সুপরিসর ও মনোরম ক্যাম্পাস পরিবেশ।',
+    captionEn: 'Serene campus environment designed for dedicated Islamic education.',
   },
   {
     id: 'g-5',
     titleBn: 'শিক্ষার্থীদের দৈনন্দিন পাঠাভ্যাস',
     titleEn: 'Students Daily Study Circle',
     category: 'students',
-    imageUrl: '/src/assets/images/academic_quran_study_1791341528979.jpg',
+    imageUrl: quranStudyImg,
     captionBn: 'নিয়মনিষ্ঠভাবে ওস্তাদগণের সামনে সবক আদায়ের সুন্দর মুহূর্ত।',
     captionEn: 'Disciplined student study circle presenting lessons to instructors.',
   },
@@ -362,7 +381,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     titleBn: 'বার্ষিক ইসলামিক মাহফিল ও দোয়া',
     titleEn: 'Annual Islamic Gathering & Dua',
     category: 'islamic',
-    imageUrl: '/src/assets/images/hero_campus_exterior_1791341510153.jpg',
+    imageUrl: heroExteriorImg,
     captionBn: 'উম্মাহর কল্যাণ কামনায় আয়োজিত বার্ষিক দোয়া ও নসিহত মাহফিল।',
     captionEn: 'Annual gathering for spiritual advice, community unity, and prayers.',
   },
@@ -371,7 +390,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     titleBn: 'সাংস্কৃতিক প্রতিযোগিতা ও পুরস্কার',
     titleEn: 'Cultural Competition & Awards',
     category: 'events',
-    imageUrl: '/src/assets/images/institution_building_day_1791341552468.jpg',
+    imageUrl: institutionBuildingImg,
     captionBn: 'শিক্ষার্থীদের মেধা ও সহশিক্ষা প্রতিভার স্বীকৃতিস্বরূপ সম্মাননা অনুষ্ঠান।',
     captionEn: 'Appreciation ceremony celebrating student talents and co-curricular achievements.',
   },
@@ -380,7 +399,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     titleBn: 'সাপ্তাহিক তিলাওয়াত ও কিরাত মাহফিল',
     titleEn: 'Weekly Recitation Circle',
     category: 'islamic',
-    imageUrl: '/src/assets/images/campus_library_hall_1791341540456.jpg',
+    imageUrl: campusLibraryImg,
     captionBn: 'তাজবিদভিত্তিক বিশুদ্ধ তিলাওয়াত অনুশীলন কার্যক্রম।',
     captionEn: 'Practice circles for melodious and accurate Tajweed recitation.',
   },

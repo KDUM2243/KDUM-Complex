@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Image as ImageIcon, X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
-import { GALLERY_ITEMS } from '../data/institutionData';
+import { GALLERY_ITEMS, INSTITUTION_INFO } from '../data/institutionData';
 import { GalleryItem, Language } from '../types';
 
 interface GallerySectionProps {
@@ -91,15 +91,16 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ currentLang }) =
               <img
                 src={item.imageUrl}
                 alt={currentLang === 'bn' ? item.titleBn : item.titleEn}
+                loading="lazy"
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== INSTITUTION_INFO.heroImage) {
+                    target.src = INSTITUTION_INFO.heroImage;
+                  }
+                }}
               />
-
-              {item.category === 'campus' && (
-                <div className="absolute top-2.5 left-2.5 z-10 bg-emerald-950/85 backdrop-blur-sm border border-amber-400/80 text-amber-300 text-[10px] font-bold px-2 py-0.5 rounded shadow">
-                  {currentLang === 'bn' ? 'পরিকল্পিত' : 'Planned'}
-                </div>
-              )}
 
               {/* Hover overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/90 via-emerald-950/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 p-4 flex flex-col justify-end text-white">
@@ -177,6 +178,12 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ currentLang }) =
                 alt={currentLang === 'bn' ? filteredItems[activeImageIndex].titleBn : filteredItems[activeImageIndex].titleEn}
                 className="max-h-[75vh] w-auto object-contain mx-auto"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== INSTITUTION_INFO.heroImage) {
+                    target.src = INSTITUTION_INFO.heroImage;
+                  }
+                }}
               />
             </div>
 

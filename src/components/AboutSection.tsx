@@ -21,8 +21,15 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ currentLang }) => {
               <img
                 src={INSTITUTION_INFO.libraryImage}
                 alt={currentLang === 'bn' ? 'দারুল উলূম কমপ্লেক্স পাঠাগার ও অধ্যয়ন পরিবেশ' : 'Darul Uloom Complex Library & Study Environment'}
+                loading="lazy"
                 className="w-full h-[260px] sm:h-[340px] lg:h-[400px] object-cover"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== INSTITUTION_INFO.heroImage) {
+                    target.src = INSTITUTION_INFO.heroImage;
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/85 via-emerald-950/20 to-transparent" />
               
