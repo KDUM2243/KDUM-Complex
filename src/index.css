@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-bengali: "Hind Siliguri", system-ui, sans-serif;
+  --font-arabic: "Amiri", serif;
+  --font-sans: "Plus Jakarta Sans", "Hind Siliguri", system-ui, sans-serif;
+
+  --color-islamic-950: #032017;
+  --color-islamic-900: #063526;
+  --color-islamic-800: #0a4834;
+  --color-islamic-700: #0f5d44;
+  --color-islamic-600: #157958;
+  --color-islamic-500: #1ba075;
+
+  --color-gold-50: #fdfbf5;
+  --color-gold-100: #f8f1de;
+  --color-gold-200: #f0e1bc;
+  --color-gold-300: #e5cd92;
+  --color-gold-400: #d6b464;
+  --color-gold-500: #c59b27;
+  --color-gold-600: #a77c18;
+  --color-gold-700: #845d14;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-bengali);
+}
+
+/* Subtle Islamic Star Lattice SVG Pattern */
+.bg-islamic-pattern {
+  background-image: radial-gradient(rgba(197, 155, 39, 0.12) 1px, transparent 1px),
+                    radial-gradient(rgba(197, 155, 39, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+.bg-islamic-geom {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l7.5 17.5L55 15l-10 15 10 15-17.5-2.5L30 60l-7.5-17.5L5 45l10-15-10-15 17.5 2.5z' fill='%23c59b27' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0a4834;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #063526;
+}

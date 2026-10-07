@@ -1,0 +1,6 @@
+{
+  "name": "কোনাবাড়ী দারুল উলূম কমপ্লেক্স",
+  "description": "দ্বীনি ও আধুনিক শিক্ষার সমন্বয়ে আদর্শ শিক্ষা প্রতিষ্ঠান - কোনাবাড়ী দারুল উলূম কমপ্লেক্স, কাশিমপুর রোড, কোনাবাড়ী, গাজীপুর।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
