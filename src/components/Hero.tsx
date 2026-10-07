@@ -19,10 +19,10 @@ export const Hero: React.FC<HeroProps> = ({ currentLang }) => {
           referrerPolicy="no-referrer"
         />
 
-        {/* Deep Islamic Green gradient overlays balanced for photo visibility & contrast */}
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/90 via-emerald-950/75 to-emerald-950/65" />
-        <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/95 via-transparent to-emerald-950/50" />
-        <div className="absolute inset-0 bg-islamic-pattern opacity-15" />
+        {/* Deep Islamic Green gradient overlays balanced for vibrant photo colors & crisp text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/85 via-emerald-950/65 to-emerald-950/55" />
+        <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/90 via-transparent to-emerald-950/40" />
+        <div className="absolute inset-0 bg-islamic-pattern opacity-10" />
       </div>
 
       {/* Decorative Golden Arch Accent Lines */}

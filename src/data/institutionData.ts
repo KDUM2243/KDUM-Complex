@@ -6,9 +6,6 @@ import heroComplexImg from '../assets/images/hero_campus_complex_1791342965149.j
 import heroExteriorImg from '../assets/images/hero_campus_exterior_1791341510153.jpg';
 import institutionBuildingImg from '../assets/images/institution_building_day_1791341552468.jpg';
 
-export const PRINCIPAL_OFFICE_IMG =
-  'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791375497/%E0%A6%9C%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8_%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95%E0%A7%87%E0%A6%B0_%E0%A6%95%E0%A6%95%E0%A7%8D%E0%A6%B7.png';
-
 export const INSTITUTION_INFO = {
   nameBn: 'কোনাবাড়ী দারুল উলূম কমপ্লেক্স',
   nameEn: 'Konabari Darul Uloom Complex',
@@ -22,11 +19,10 @@ export const INSTITUTION_INFO = {
   addressEn: 'East of Haque Medical, Kashimpur Road, Konabari, Gazipur, Bangladesh.',
   areaBn: 'কোনাবাড়ী, গাজীপুর',
   areaEn: 'Konabari, Gazipur',
-  heroImage: 'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791355568/WhatsApp_Image_2026-03-01_at_11.18.06_AM.jpg',
+  heroImage: 'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791375497/%E0%A6%9C%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8_%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95%E0%A7%87%E0%A6%B0_%E0%A6%95%E0%A6%95%E0%A7%8D%E0%A6%B7.png',
   quranStudyImage: quranStudyImg,
   libraryImage: campusLibraryImg,
   campusBuildingImage: 'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791355568/WhatsApp_Image_2026-03-01_at_11.18.06_AM.jpg',
-  principalOfficeImage: PRINCIPAL_OFFICE_IMG,
   logoUrl: 'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791341141/Madrasha_Logo_New.jpg',
   campusPlanTitle: 'KONABARI DARUL ULOOM COMPLEX, GAZIPUR',
   campusPlanTag: 'পরিকল্পিত',
@@ -330,15 +326,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     imageUrl: 'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791355568/WhatsApp_Image_2026-03-01_at_11.18.06_AM.jpg',
     captionBn: 'কোনাবাড়ী দারুল উলূম কমপ্লেক্সের সুপরিসর ক্যাম্পাস ভবন।',
     captionEn: 'Campus building of Konabari Darul Uloom Complex.',
-  },
-  {
-    id: 'g-principal',
-    titleBn: 'জামিয়ার প্রধান শিক্ষকের কক্ষ',
-    titleEn: "Principal's Office / Head Teacher Room",
-    category: 'campus',
-    imageUrl: PRINCIPAL_OFFICE_IMG,
-    captionBn: 'কোনাবাড়ী দারুল উলূম কমপ্লেক্সের প্রধান শিক্ষকের অফিস কক্ষ।',
-    captionEn: "Office room of the Head Teacher / Principal, Konabari Darul Uloom Complex.",
   },
   {
     id: 'g-2',
