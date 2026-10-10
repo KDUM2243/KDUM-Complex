@@ -153,8 +153,11 @@ export const AdmissionSection: React.FC<AdmissionSectionProps> = ({ currentLang 
             <h4 className="text-xs font-bold uppercase tracking-wider text-emerald-900 mb-1">
               {currentLang === 'bn' ? 'সরাসরি যোগাযোগ ও অফিস' : 'Office Location & Direct Inquiry'}
             </h4>
-            <p className="text-xs text-slate-700 mb-3">
+            <p className="text-xs text-slate-700 mb-1.5">
               {currentLang === 'bn' ? INSTITUTION_INFO.addressBn : INSTITUTION_INFO.addressEn}
+            </p>
+            <p className="text-xs text-emerald-800 font-semibold mb-3">
+              {currentLang === 'bn' ? `অফিস সময়: ${INSTITUTION_INFO.officeHoursBn}` : `Office Hours: ${INSTITUTION_INFO.officeHoursEn}`}
             </p>
             <a
               href={`tel:${INSTITUTION_INFO.phone}`}

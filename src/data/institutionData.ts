@@ -19,6 +19,8 @@ export const INSTITUTION_INFO = {
   addressEn: 'East of Haque Medical, Kashimpur Road, Konabari, Gazipur, Bangladesh.',
   areaBn: 'কোনাবাড়ী, গাজীপুর',
   areaEn: 'Konabari, Gazipur',
+  officeHoursBn: 'সকাল ৭:০০ থেকে রাত ১০:০০ পর্যন্ত (শুক্রবার সীমিত সময়)',
+  officeHoursEn: '7:00 AM to 10:00 PM (Limited Friday hours)',
   heroImage: 'https://res.cloudinary.com/jeqkcwf8/image/upload/v1791375497/%E0%A6%9C%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8_%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95%E0%A7%87%E0%A6%B0_%E0%A6%95%E0%A6%95%E0%A7%8D%E0%A6%B7.png',
   quranStudyImage: quranStudyImg,
   libraryImage: campusLibraryImg,

@@ -163,8 +163,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentLang }) =
                     </span>
                     <p className="text-emerald-100 text-xs sm:text-sm">
                       {currentLang === 'bn'
-                        ? 'সকাল ৮:০০ থেকে আসর পর্যন্ত (শুক্রবার সীমিত সময়)'
-                        : '8:00 AM to Asr prayer time (Limited Friday hours)'}
+                        ? INSTITUTION_INFO.officeHoursBn
+                        : INSTITUTION_INFO.officeHoursEn}
                     </p>
                   </div>
                 </div>
